@@ -17,7 +17,7 @@
       novalidate:入力（選択）内容のチェックを行わない<br>
       target:フォームの送信結果を表示させるブラウジングコンテキスト（ウィンドウやタブなど）を指定<br>
       <br>
-      input要素<br>
+      <h2>input要素</h2><br>
       text：<input type="text" name="" value="">  <br>
       password:<input type="password" name="" value=""> <br>
       search：<input type="search" name="" value="">  <br>
@@ -69,7 +69,55 @@
       name:フォームb部品の名前<br>
       pattern:フォーム部品の値にマッチする正規表現パターン<br>
       placeholder:プレースホルダー（入力すべき値がわかるように入力圏内に表示される入力例や簡単な説明）<br>
-
+      readonly:値の編集（変更）ができないようにする<br>
+      required:入力・選択されていることが必須であることを示す<br>
+      size:幅を文字数で指定<br>
+      src:データのアドレス<br>
+      step:この属性で指定した数値の間隔でしか入力できなくする<br>
+      value:フォーム部品の値<br>
+      <br>
+      <br>
+      <h2>textarea要素</h2><br>
+      textarea要素は、複数行のテキスト入力フィールドとなる要素です。要素内容として入れたテキストは、入力フィールドにあらかじめ入力された状態で表示されます。<br>
+      <textarea name="name" rows="8" cols="80"></textarea>
+      <br>
+      指定できる属性は以下の通り。<br>
+      cols:１行に入力可能な文字数<br>
+      rows:入力欄の行数<br>
+      autocomplete:要素のオートコンプリートのオン・オフまたは自動入力すべき値を示すキーワードなど<br>
+      inputmode:入力モード<br>
+      autofocus:ページが読み込まれたら自動的にこの要素にフォーカスする<br>
+      dirname:文字表記の方向を示す値を送信するフィールドの名前<br>
+      disabled:フォームの部品を無効にする<br>
+      form:フォーム部品を特定のform要素（id属性の値で指定）と関連づける<br>
+      maxlength:最大文字数<br>
+      minlength:最小文字数<br>
+      name:フォーム部品の名前<br>
+      placeholder:プレースホルダー（入力すべき値がわかるように入力圏内に表示される入力例や簡単な説明）<br>
+      readonly:値の編集（変更）ができないようにする<br>
+      required:入力・選択されていることが必須であることを示す<br>
+      wrap:フォームのデータを送信する際、入力されたテキストの行の折り返し部分に改行コードを加えるかどうか<br>
+      <br>
+      <br>
+      <h2>button要素</h2>
+      button要素は、要素内容がそのままラベルとして表示されるボタンになる要素です。<br>
+      <button type="button" name="button">button</button>
+      type属性の値にsubmitを指定すると送信ボタン、resetを指定するとリセットボタン、menuを指定するとメニューを表示させるボタン等になります。デフォルトはsubmitです。<br>
+      <br>
+      type:ボタンの種類。submit,reset,menu,button(何もしない)が指定可能<br>
+      menu:表示させるメニュー<br>
+      autofocus:ページが読み込まれたら自動的にこの要素にフォーカスする<br>
+      disabled:フォームの部品を無効にする<br>
+      form:フォーム部品を特定のform要素（id属性の値で指定）と関連づける<br>
+      formaction:フォームの送信先のURL<br>
+      formenctype:フォームのデータを送信する際のデータ形式をMIMEタイプで指定<br>
+      formmethod:フォームのデータを送信する際のHTTPメソッドを指定<br>
+      formnovalidate:入力（選択）内容のチェックを行わない<br>
+      formtarget:送信結果を表示させるブラウジングコンテキスト（ウィンドウやタブなど）を指定<br>
+      name:フォーム部品の名前<br>
+      value:フォームのデータを送信する際に使用される値<br>
+      <br>
+      <br>
     </form>
   </body>
 </html>
