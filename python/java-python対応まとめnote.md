@@ -5,7 +5,7 @@ pythonの文法が覚えられない
 ので、対応表を作ってまとめた
 
 
-||Java|Python|備考|
+||Java|Python|説明|
 |:----|:----|:----|:---|
 ||Scanner.nextInt()|int(input().split())|標準入力をスペースで区切り数値で取得|
 ||Scanner.nextLine()|input()|標準入力を１行文字列として取得|
