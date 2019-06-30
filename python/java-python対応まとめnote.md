@@ -9,7 +9,7 @@ pythonの文法が覚えられない
 |:----|:----|:----|:---|
 ||Scanner.nextInt()|int(input().split())|標準入力をスペースで区切り数値で取得|
 ||Scanner.nextLine()|input()|標準入力を１行文字列として取得|
-|||import sys sys.argv |標準入力を引数(argv)から取得|
+|||import sys<br>sys.argv |標準入力を引数(argv)から取得|
 |||||
 |||||
 ||System.out.println(xx)|print(xx)|コンソールにxxを出力して改行する|
@@ -29,6 +29,9 @@ pythonの文法が覚えられない
 |||||
 |||join()||
 |||zip()||
+|||c = zip(a,b)<br>c = sorted(c)<br>a,b = zip(*c)<br>※ただしa,bはタプルで返ってくる|２つの配列、リストをどちらかを軸にしてソートする|
+|||||
+|||||
 |||||
 ||||リストから共通の要素を取り出す|
 |||||
@@ -99,3 +102,11 @@ for i,square in enumerate(squares):
 # Pandasライブラリ
 
 データ分析の有名なライブラリ？
+
+
+### そのためも
+
+- pythonでのand,orの演算
+- pythonでインクリメントは使えない
+
+- pythonで順列・組み合わせを求める方法は？
