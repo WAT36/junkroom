@@ -173,6 +173,66 @@
       optimum:メーターの示す範囲内での最適値<br>
       <br>
       <br>
+      <h2>progress要素</h2>
+      progress要素は、<b>タスク（コンピュータが行なっている作業）の進み具合を表す</b>ための専用要素です。<br>
+      <progress value="0" max="100">0%</progress><br>
+      value:現在の進み具合<br>
+      max:タスクの全体量<br>
+      <br>
+      <br>
+      <h2>datalist要素</h2>
+      datalist要素は、<b>input要素にサジェスト機能を追加する（入力候補の選択肢を与える）要素</b>です。<br>
+      datalist要素の中に入れたoption要素が選択肢になります。<br>
+      input要素とdatalist要素を関連づけるには、datalist要素のid属性の値をinput要素のlist属性に指定します。<br>
+      <p>
+        <label>
+          取得したい資格：
+          <input type="text" name="c" list="certifications">
+        </label>
+        <datalist id="certifications">
+          <br>
+          <label>
+            メニューから選択
+            <br>
+            <select name="cert">
+              <option value="">(未選択)</option>
+              <option>HTML5</option>
+              <option>Webデザイン</option>
+            </select>
+          </label>
+        </datalist>
+      </p>
+      <br>
+      <br>
+      <h2>output要素</h2>
+      output要素は、<b>計算結果</b>やユーザーの操作による結果を示すための要素です。<br>
+      <form onsubmit="return false" oninput="sum.value=a.valueAsNumber+b.valueAsNumber">
+        <input name="a" type="number"> +
+        <input name="b" type="number"> =
+        <output for="a b" name="sum"></output>
+      </form>
+      <br>
+      <br>
+      for:計算のもととなったフォーム部品を示す<br>
+      name:フォーム部品の名前<br>
+      form:フォーム部品を特定のform要素(id属性の値で指定)と関連づける<br>
+      <br>
+      <br>
+      <h2>keygen要素</h2>
+      keygen要素は、<b>公開鍵暗号における公開鍵・秘密鍵のペアを生成するフォーム部品</b>です。<br>
+      フォームを送信すると、秘密鍵はローカルに保存され、公開鍵はサーバーに送られます。この要素は空要素です。<br>
+      <br>
+      keytype:生成する暗号鍵の種類<br>
+      challenge:生成・署名された公開鍵とともに送信される文字列<br>
+      name:フォーム部品の名前<br>
+      autofocus:ページが読み込まれたら自動的にこの要素にフォーカスする<br>
+      disabled:フォームの部品を無効にする<br>
+      form:フォーム部品を特定のform要素（id属性の値で指定）と関連づける<br>
+      <br>
+      <br>
+      <br>
+      <br>
+      
     </form>
   </body>
 </html>
