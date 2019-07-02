@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>1-11 table</title>
+  </head>
+  <body>
+    table要素は、表形式のデータを表すための要素です。<br>
+    table要素内には、次の順で要素を配置します。<br>
+    <ul>
+      <li>０個か１個のcaption要素</li>
+      <li>０個以上のcolgroup要素</li>
+      <li>０個か１個のthread要素</li>
+      <li>０個以上のtbody要素または１個以上のtr要素</li>
+      <li>０個か１個のtfoot要素</li>
+    </ul>
+    属性としては<br>
+    border:table要素をレイアウトのために使用していないことを明示する<br>
+    がある<br>
+    <br>
+    <br>
+    tr要素は、<b>表の横一列</b>分のセルを取りまとめる要素です。<br>
+    要素内容としては、０個以上のth要素・td要素のほか、script要素とtemplate要素を入れることもできる。<br>
+    <br>
+    <br>
+    th要素は、<b>見出し用のセル</b>を表す要素です。<br>
+    要素内容としては、フローコンテンツ(Flow content)が入れられますが、次の要素は例外となっています。<br>
+    h1~h6要素、section要素、article要素、aside要素、nav要素、header要素、footer要素<br>
+    <br>
+    <br>
+    th要素に指定できる属性<br>
+    colspan:１つのセルとしてまとめるカラム数<br>
+    rowspan:１つのセルとしてまとめる行数<br>
+    headers:この属性を指定したセルの見出しとなっているヘッダーセル<br>
+    scope:ヘッダーセルの見出しの対象となっているセルの範囲<br>
+    abbr:代替ラベル（簡略化した見出し）<br>
+    <br>
+    <br>
+    td要素は、<b>データ用のセル</b>を表す要素です。要素内容としてはフローコンテンツが入れられます。<br>
+    <br>
+    <br>
+    colspan:１つのセルとしてまとめるカラム数<br>
+    rowspan:１つのセルとしてまとめる行数<br>
+    headers:この属性を指定したセルの見出しとなっているヘッダーセル<br>
+    <br>
+    <br>
+    thead要素は、見出しとなっているtr要素をグループ化する要素です。<br>
+    thead要素の「thead」は「table header」の略で、簡単に言えば<b>表のヘッダー部分</b>を表す要素です。<br>
+    要素内容としては、０個以上のtr要素のほか、script要素とtemplate要素を入れることもできます。<br>
+    <br>
+    <br>
+    tbody要素は「table body」の略で、<b>表の本体部分</b>を表します。<br>
+    要素内容としては、０個以上のtr要素のほか、script要素とtemplate要素を入れることもできます。
+  </body>
+</html>
