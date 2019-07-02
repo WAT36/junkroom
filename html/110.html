@@ -230,9 +230,43 @@
       form:フォーム部品を特定のform要素（id属性の値で指定）と関連づける<br>
       <br>
       <br>
+      <h2>label要素</h2>
+      label要素は、その要素内容であるラベル（その部品が何の項目であるのかを示すテキスト）とフォームの部品とを関連づけるための要素です。<br>
+      関連づけられたラベルは、部品と一体化してユーザーの操作に反応するようになります。<br>
+      ラベルと関連づけることのできるフォーム部品は、次の通りです。
+      input (type-hidden以外),textarea,button,select,keygen,meter,progress,output<br>
+      <input type="checkbox" name="agree" value="ag">
+      <label for="ag"></label>
       <br>
       <br>
-      
+      <h2>fieldset要素</h2>
+      fieldset要素は、フォーム関連の要素をグループ化するための専用要素です。<br>
+      要素内容の先頭にlegend要素を入れると、その要素内容がグループの名前として表示されます。<br>
+      <br>
+      <br>
+      disables:フォームの部品を無効にする<br>
+      form:フォーム部品を特定のform要素(id属性の値で指定)と関連づける<br>
+      name:フォーム部品の名前<br>
+      <br>
+      <br>
+      <h2>legend要素</h2>
+      legend要素は、fieldset要素によってグループ化されたフォーム関連要素の<b>グループ名（キャプション）を表示させる</b>ための要素です。<br>
+      この要素を使用する場合は、必ずfieldset要素の内容の先頭に入れる必要があります。<br>
+      <fieldset>
+        <legend>個人情報(legend)</legend>
+        <p>
+          <label>
+            名前：<br>
+            <input type="text" name="nm">
+          </label>
+        </p>
+        <p>
+          <label>
+            住所：<br>
+            <textarea name="ad" rows="3"></textarea>
+          </label>
+        </p>
+      </fieldset>
     </form>
   </body>
 </html>
