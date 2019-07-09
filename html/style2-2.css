@@ -1,0 +1,28 @@
+/*タイプセレクタ　htmlのタイプを指定*/
+h1
+{
+  color : teal;
+  font-size: 36px;
+  text-shadow: 1px 1px 2px black;
+}
+
+/*ユニバーサルセレクタ 全ての要素が適用対象*/
+/* { color : blue; } */
+
+/*クラスセレクタ ピリオドに続けてHTMLのclass属性の値を指定すると、そのclass属性の値を持つ要素が適用対象となる*/
+p.csstest { color: #aaa; }
+
+/*IDセレクタ #に続けてHTMLのid属性の値を指定すると*/
+p#cssidtest { color: #777; }
+
+/*属性セレクタ 特定の属性が指定されている要素、または特定の属性に特定の値が指定さrている要素を適用対象とする*/
+p[class="csstest"] { border: 3px solid:#f00 }
+
+/*リンク関連の擬似クラス*/
+a:link { color:red }
+
+/*その他の擬似クラス*/
+
+/*擬似要素*/
+
+/*結合子*/
