@@ -27,8 +27,9 @@ pythonの文法が覚えられない
 |リストの全要素の合計||sum(リスト)||
 |リストのソート（リスト自体は変化しない）||sorted(リスト)||
 |リストのソート（リスト自体もソートされる）|Collections.sort(リスト)|リスト.sort()||
-|リストa,bの共通要素のみを表示||c = [x for x in a if x in b]||
-|||||
+|リストa,bの共通要素のみを表示||c = [x for x in a if x in b]<br>もしくはa,bをsetにして & (and)でつなぐ<br>A = set(a)<br>B = set(b)<br>C = A & B||
+|リストa,bの和集合を表示||a,bをsetにして ｜ (or)でつなぐ<br>A = set(a)<br>B = set(b)<br>C = A ｜ B||
+|文字列Sを１文字ずつのリストにする||**list(文字列)**<br>（これでOKらしい・・）||
 |||||
 |||||
 |||||
