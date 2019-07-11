@@ -30,7 +30,7 @@ pythonの文法が覚えられない
 |リストa,bの共通要素のみを表示||c = [x for x in a if x in b]<br>もしくはa,bをsetにして & (and)でつなぐ<br>A = set(a)<br>B = set(b)<br>C = A & B||
 |リストa,bの和集合を表示||a,bをsetにして ｜ (or)でつなぐ<br>A = set(a)<br>B = set(b)<br>C = A ｜ B||
 |文字列Sを１文字ずつのリストにする||**list(文字列)**<br>（これでOKらしい・・）||
-|||||
+|リストから指定したインデックスの要素を削除する|リスト.remove(インデックス)|del リスト[インデックス]||
 |||||
 |||||
 |辞書（Map)|Map<String,String> a = new HashMap<String,String>();<br>(String,Stringの例)|dict = {}<br>||
