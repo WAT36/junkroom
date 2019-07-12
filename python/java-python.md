@@ -9,7 +9,7 @@ pythonの文法が覚えられない
 自身も勉強中のため、随時追加予定
 
 |説明|Java|Python||
-|:-|:-|:-|:-|
+|:----|:----|:----|:----|
 |標準入力をスペースで区切り数値で取得|Scanner.nextInt()|int(input().split())||
 |標準入力を１行文字列として取得|Scanner.nextLine()|input()||
 |標準入力を引数(argv)から取得|メソッドの引数にString[] argsと書いて<br>そのメソッド内でargs（引数のインデックス）|import sys<br>sys.argv ||
