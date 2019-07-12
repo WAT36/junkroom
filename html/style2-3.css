@@ -9,5 +9,5 @@
 /*製作者」「ユーザー」「ユーザーエージェント」の指定元による優先順位は、
   CSSの宣言（プロパティ：値）の後ろに「!important」を追加することで変更可能。*/
 p {
-  font-size: 24pt !important
+  font-size: 60pt !important
 }
