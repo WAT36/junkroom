@@ -3,3 +3,20 @@
 body{ background-color: #fff; }
 
 body{ background-image: url(ViewControllerforhtmltest.png)}
+body{ word-break: break-all;}
+/*ハイフネーション：行末に収まりきらない英単語などの音節の区切りの位置にハイフンをつけて改行し、
+  単語の残りを次の行に送って表示させること。*/
+body{ hyphens: auto;}
+/*white-spaceプロパティ：連続する空白文字を１つの半角スペースに変換するかどうか、と
+  自動的な行の折り返しを行うかどうか　を制御するプロパティ*/
+body{ white-space: nowrap;}
+/*text-alignプロパティ：その内容の行揃えを設定する*/
+body{ text-align: justify;}
+/*vertical-alignプロパティ：インライン要素の縦方向の位置を設定するプロパティ*/
+body{ vertical-align: top;}
+/*line-heightプロパティ：行の高さを設定するプロパティ*/
+body{ line-height: 50%}
+/*text-indentプロパティ：ブロックレベル要素の１行目のインデントを設定する*/
+body{ text-indent: 50%}
+/*letter-sparcingプロパティ：文字間隔を設定するプロパティ*/
+body{ letter-spacing: normal;}
