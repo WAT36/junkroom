@@ -13,10 +13,18 @@ body{ white-space: nowrap;}
 /*text-alignプロパティ：その内容の行揃えを設定する*/
 body{ text-align: justify;}
 /*vertical-alignプロパティ：インライン要素の縦方向の位置を設定するプロパティ*/
-body{ vertical-align: top;}
+h1{ vertical-align: top;}
 /*line-heightプロパティ：行の高さを設定するプロパティ*/
-body{ line-height: 50%}
+h2{ line-height: 50%}
 /*text-indentプロパティ：ブロックレベル要素の１行目のインデントを設定する*/
-body{ text-indent: 50%}
+h3{ text-indent: 50%}
 /*letter-sparcingプロパティ：文字間隔を設定するプロパティ*/
-body{ letter-spacing: normal;}
+h4{ letter-spacing: normal;}
+/*word-sparcingプロパティ：単語と単語の間隔を設定するプロパティ*/
+body{ word-spacing: normal;}
+/*text-transformプロパティ：アルファベットの大文字・小文字を変換して表示させるプロパティ*/
+h5{ text-transform: uppercase;}
+/*difectionプロパティ：文字表記の方向を設定するプロパティ*/
+body{ direction: ltr;}
+/*unicode-bidiプロパティ：文字表記の方向*/
+body{ unicode-bidi: embed;}
