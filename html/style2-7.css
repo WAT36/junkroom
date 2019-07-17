@@ -1,9 +1,13 @@
 /*フォント*/
 
-@@font-face {
+@font-face {
   font-family: mynavifont;
   src: url(http://example.com/fonts/mynaviRegular.woff);
 }
 
 h1 { font-family: mynavifont, serif;}
 h2 { font-family: "メイリオ", "ヒラギノ角ゴ Pro W3", Helvetica, sans-serif;}
+h3 { font-size: 50%;}
+h4 { font-weight: bold;}
+h5 { font-style: oblique;}
+p { font-variant: small-caps;}
