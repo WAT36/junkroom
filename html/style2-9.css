@@ -1,0 +1,18 @@
+/*マルチカラム*/
+
+body{
+  column-count: 3;
+  column-gap: 1.2em;
+  column-rule-width: 5px;
+  column-rule-style: groove;
+  column-rule-color: #f00;
+}
+
+h2{
+  column-span: all;
+}
+
+div{
+  column-width: 28em;
+  display: flex;
+}
