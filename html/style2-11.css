@@ -1,0 +1,22 @@
+/*その他*/
+
+body{
+  background: linear-gradient(#ddd, #333);
+  background: linear-gradient(to bottom, #ddd, #333);
+  background: linear-gradient(100deg, #ddd, #333);
+  background: linear-gradient(100deg, #ddd 0%, #333 100%);
+}
+
+h2{
+}
+
+div{
+  width: 100px;
+  height: 100px;
+  color: #fff;
+  background: #999;
+  transform: translate(200px,100px) scale(1.5, 1.5) rotate(45deg);
+  transform-origin: top left;
+  transition-property: transform;
+  transition-duration: 5s;
+}
