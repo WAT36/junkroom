@@ -18,7 +18,7 @@ pythonの文法が覚えられない
 |コンソールにxxを出力して改行する|System.out.println(xx)|print(xx)||
 |コンソールにxxを出力して改行しない|System.out.print(xx)|print(xx,end="")||
 |||||
-|コンソールにxxを出力して改行しない||(文字列).upper()||
+|文字列を大文字にする||(文字列).upper()||
 |||||
 |||||
 |タプル||||
@@ -27,6 +27,7 @@ pythonの文法が覚えられない
 |リストの全要素の合計||sum(リスト)||
 |リストのソート（リスト自体は変化しない）||sorted(リスト)||
 |リストのソート（リスト自体もソートされる）|Collections.sort(リスト)|リスト.sort()||
+|リストを逆順にソート（リスト自体もソートされる）||リスト.reverse()||
 |リストa,bの共通要素のみを表示||c = [x for x in a if x in b]<br>もしくはa,bをsetにして & (and)でつなぐ<br>A = set(a)<br>B = set(b)<br>C = A & B||
 |リストa,bの和集合を表示||a,bをsetにして ｜ (or)でつなぐ<br>A = set(a)<br>B = set(b)<br>C = A ｜ B||
 |文字列Sを１文字ずつのリストにする||**list(文字列)**<br>（これでOKらしい・・）||
@@ -47,15 +48,12 @@ pythonの文法が覚えられない
 |辞書(Map)からキーのリストを取得||**辞書.keys()**<br>（dict_keys型で取得。全てのキーを順に取るには<br>**for v in 辞書.keys()**）||
 |辞書(Map)から値のリストを取得||**辞書.values()**<br>（dict_values型で取得。全ての値を順に取るには<br>**for i in 辞書.values()**）||
 |||||
-|リストを逆順にして表示||||
 |||||
 |||join()||
 |||zip()||
 |２つの配列、リストをどちらかを軸にして対応させるようにソートする|int[][] a<br>Arrays.sort(a,(x,y) -> Integer.comparator(x[0],y[0]))<br>（配列の形式と比較させたい方法によって適宜変更）|c = zip(a,b)<br>c = sorted(c)<br>a,b = zip(*c)<br>※ただしa,bはタプルで返ってくる||
 |||||
 |||||
-|||||
-|リストから共通の要素を取り出す||||
 |||||
 |||||
 |数値を文字列に変更する|String.valueOf(数値)|str(数値)||
