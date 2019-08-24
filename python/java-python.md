@@ -8,24 +8,61 @@ pythonの文法が覚えられない
 
 自身も勉強中のため、随時追加予定
 
+# 標準入力、出力
+
 |説明|Java|Python||
 |:---|:---|:---|:-|
 |標準入力をスペースで区切り数値で取得|Scanner.nextInt()|int(input().split())||
 |標準入力を１行文字列として取得|Scanner.nextLine()|input()||
 |標準入力を引数(argv)から取得|メソッドの引数にString[] argsと書いて<br>そのメソッド内でargs（引数のインデックス）|import sys<br>sys.argv ||
 |||||
-|||||
 |コンソールにxxを出力して改行する|System.out.println(xx)|print(xx)||
 |コンソールにxxを出力して改行しない|System.out.print(xx)|print(xx,end="")||
-|||||
-|文字列を大文字にする|(文字列).toUpperCase()|(文字列).upper()||
-|文字列を小文字にする|(文字列).toLowerCase()|(文字列).lower()||
 |||||
 |メソッド(関数)の宣言|(アクセス修飾子) [static] (戻り値の型) 関数名(引数){}<br>例：```public static void main(String[] args){}```|def 関数名(引数):<br>||
 |||||
 |プログラムを終了する|return;<br>または<br>System.exit(終了ステータス);|import sys<br>sys.exit()||
+||||||
+
+# 文字列、数値
+
+|説明|Java|Python||
+|:---|:---|:---|:-|
+|文字列を大文字にする|(文字列).toUpperCase()|(文字列).upper()||
+|文字列を小文字にする|(文字列).toLowerCase()|(文字列).lower()||
+|||||
+|数値を文字列に変更する|String.valueOf(数値)|str(数値)||
+|文字列を数値に変更する|Integer.parseInt(文字列)|int(文字列)||
+|１文字からアスキーコードを取得|char c;<br>int ascii = (int)c; |ord(１文字)||
+|数字の頭をゼロ詰して表示する|**String.format("03d",数字)**<br>（ゼロ詰して３桁で表示する時の例）|||
+|数値を１６進数にして表示する||hex(数値)||
+|階乗の計算||import math<br>math.factorial(数字)||
+|絶対値|Math.abs(数字)|abs(数字)||
+|２つの数字のうち大きい方|Math.max(数字、数字)|max(数字、数字・・)<br>幾つでも可||
+|２つの数字のうち小さい方|Math.min(数字、数字)|min(数字、数字・・)<br>幾つでも可||
+|円周率(π)||import numpy as np<br>**np.pi**||
+|常用対数(底10)|Math.log10()|import math<br>math.log10(数字)||
+|対数(底2)||import math<br>math.log2(数字)||
 |||||
 |||||
+|小数点切り下げ|Math.floor(数値)|import math<br>math.floor(数値)||
+|小数点切り上げ|Math.ceil(数値)|import math<br>math.ceil(数値)<br>また、割り算の時は<br>a = b **//** c<br>とすれば割り算と同時に切り下げも行う||
+|二進数で表示||bin(10進数の数値)||
+|二進数で表示した時の長さ||数値.bit_length()||
+|８進数で表示||oct(10進数の数値)||
+|１６進数で表示||hex(10進数の数値)||
+|||||
+|xとyの論理和(OR)をとる||x ｜ y||
+|xとyの論理積(AND)をとる||x & y||
+|xとyの排他的論理和(XOR)をとる||x ^ y||
+|３項演算子|int a = (条件式) ? (正のとき入れる値) : (負のとき入れる値)|a = (正のとき入れる値) if (条件式) else (負のとき入れる値)||
+|||||
+
+
+# タプル、リスト
+
+|説明|Java|Python||
+|:---|:---|:---|:-|
 |||||
 |タプル||||
 |リスト|List<型(ラッパークラス)> 変数名 = new ArrayList<>();<br>※ArrayListにすべきかは諸説あるけど・・|変数 = [ , , ・・]<br>または<br>変数 = list()||
@@ -46,6 +83,14 @@ pythonの文法が覚えられない
 |リストを１つの文字列に変換する||''.**join(リスト)**<br>※最初の''は区切り文字を表しており、リスト内の各要素をこの区切り文字で連結して返す。||
 |リストから条件に合う要素のみを取得した新しいリストを作成する||**リスト内包表記**を利用する<br>list = （元のリストを定義）<br>new_list = [e for e in list if e%2 == 0]<br>**[式 for 要素 in リスト if 条件]**||
 |多次元リスト(配列)である列をキーにしてソートしたい時||リスト.sort(key=**lambda x:x[1]**)<br>２つ指定したいときは<br>リスト.sort(key=**lambda x:(x[1],x[2])**)<br>※sortedでも同じ||
+|リストの指定した要素のインデックスを調べる|リスト.indexOf(要素)|リスト.**index**(要素)||
+|||||
+|||||
+
+# 辞書、Map
+
+|説明|Java|Python||
+|:---|:---|:---|:-|
 |||||
 |辞書（Map)|Map<String,String> a = new HashMap<String,String>();<br>(String,Stringの例)|dict = {}<br>||
 |辞書(Map)に要素を置く|(Map).put(キー,値)|辞書[キー] = 要素||
@@ -68,12 +113,6 @@ pythonの文法が覚えられない
 |||||
 |||||
 |||||
-|数値を文字列に変更する|String.valueOf(数値)|str(数値)||
-|文字列を数値に変更する|Integer.parseInt(文字列)|int(文字列)||
-|１文字からアスキーコードを取得|char c;<br>int ascii = (int)c; |ord(１文字)||
-|数字の頭をゼロ詰して表示する|**String.format("03d",数字)**<br>（ゼロ詰して３桁で表示する時の例）|||
-|数値を１６進数にして表示する||hex(数値)||
-|||||
 |||||
 |||||
 |関数（メソッド）|アクセス修飾子 (static) 返り値の型　メソッド名(引数){}|def 関数名(引数)||
@@ -95,10 +134,6 @@ pythonの文法が覚えられない
 |||||
 |||||
 |||||
-|階乗の計算||import math<br>math.factorial(数字)||
-|絶対値|Math.abs(数字)|abs(数字)||
-|２つの数字のうち大きい方|Math.max(数字、数字)|max(数字、数字・・)<br>幾つでも可||
-|２つの数字のうち小さい方|Math.min(数字、数字)|min(数字、数字・・)<br>幾つでも可||
 |リストのうち一番大きい数字|Collections.max(リスト)|max(リスト)||
 |リストの各要素全てに一つの数字を演算する||import numpy<br>a = np.array(リスト)<br>b = a([k:l]) + 1<br>(リストの一部分に対して行いたいとき)<br>b = a[k:l] + 1||
 |１次元行列を作る||import numpy as np<br>a = np.array([0,1,2,3,4])||
@@ -121,23 +156,6 @@ pythonの文法が覚えられない
 |文字列をゼロ埋めして表示する||文字列.**zfill**(ゼロ埋め後の桁数)||
 |||||
 |||||
-|||||
-|円周率(π)||import numpy as np<br>**np.pi**||
-|常用対数(底10)|Math.log10()|import math<br>math.log10(数字)||
-|対数(底2)||import math<br>math.log2(数字)||
-|||||
-|||||
-|小数点切り下げ|Math.floor(数値)|import math<br>math.floor(数値)||
-|小数点切り上げ|Math.ceil(数値)|import math<br>math.ceil(数値)<br>また、割り算の時は<br>a = b **//** c<br>とすれば割り算と同時に切り下げも行う||
-|二進数で表示||bin(10進数の数値)||
-|二進数で表示した時の長さ||数値.bit_length()||
-|８進数で表示||oct(10進数の数値)||
-|１６進数で表示||hex(10進数の数値)||
-|||||
-|xとyの論理和(OR)をとる||x ｜ y||
-|xとyの論理積(AND)をとる||x & y||
-|xとyの排他的論理和(XOR)をとる||x ^ y||
-|３項演算子|int a = (条件式) ? (正のとき入れる値) : (負のとき入れる値)|a = (正のとき入れる値) if (条件式) else (負のとき入れる値)||
 |||||
 |||||
 ||||||
@@ -234,3 +252,11 @@ list2の場合は内包表記を使って複数のリストを作っているの
 要は
 
 Ax = B
+
+
+# TypeError: 'int' object is not callable というエラーが出る
+
+これはビルトイン関数と同じ名前の関数を定義した事によるエラー
+ビルトイン関数(built-in function)とは、元から備え付けられてる関数です。 ビルトイン関数を使うのに、 ユーザーが独自に関数を定義したり、特に何かライブラリをインポートする必要はありません。
+
+ビルトイン関数を和訳すると、「組み込み関数」らしいです。
