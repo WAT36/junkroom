@@ -30,10 +30,12 @@ pythonの文法が覚えられない
 |:---|:---|:---|:-|
 |文字列を大文字にする|(文字列).toUpperCase()|(文字列).upper()||
 |文字列を小文字にする|(文字列).toLowerCase()|(文字列).lower()||
+|文字列の後ろに１文字追加する||||
 |||||
 |数値を文字列に変更する|String.valueOf(数値)|str(数値)||
 |文字列を数値に変更する|Integer.parseInt(文字列)|int(文字列)||
 |１文字からアスキーコードを取得|char c;<br>int ascii = (int)c; |ord(１文字)||
+|||||
 |数字の頭をゼロ詰して表示する|**String.format("03d",数字)**<br>（ゼロ詰して３桁で表示する時の例）|||
 |数値を１６進数にして表示する||hex(数値)||
 |階乗の計算||import math<br>math.factorial(数字)||
@@ -43,7 +45,6 @@ pythonの文法が覚えられない
 |円周率(π)||import numpy as np<br>**np.pi**||
 |常用対数(底10)|Math.log10()|import math<br>math.log10(数字)||
 |対数(底2)||import math<br>math.log2(数字)||
-|||||
 |||||
 |小数点切り下げ|Math.floor(数値)|import math<br>math.floor(数値)||
 |小数点切り上げ|Math.ceil(数値)|import math<br>math.ceil(数値)<br>また、割り算の時は<br>a = b **//** c<br>とすれば割り算と同時に切り下げも行う||
@@ -159,6 +160,7 @@ pythonの文法が覚えられない
 |||||
 |||||
 ||||||
+
 
 # 他、Pythonの小技
 
